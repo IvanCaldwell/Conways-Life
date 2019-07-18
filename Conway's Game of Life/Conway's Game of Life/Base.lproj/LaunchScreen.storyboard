@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zMw-rG-Oc6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="yZp-ms-wLS">
+            <objects>
+                <viewController id="zMw-rG-Oc6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DPz-lD-IcV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bSY-F7-7Ej">
+                                <rect key="frame" x="0.0" y="377" width="414" height="163.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Yippee Ki-yay
+Conway's Game of Life</string>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chicken" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-o9-17C">
+                                <rect key="frame" x="199" y="353" width="16" height="16"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zkh-o9-17C" firstAttribute="centerY" secondItem="DPz-lD-IcV" secondAttribute="centerY" constant="-87" id="6j8-QQ-gYm"/>
+                            <constraint firstItem="bSY-F7-7Ej" firstAttribute="trailing" secondItem="AgF-qL-F7T" secondAttribute="trailing" id="HbL-B6-o8J"/>
+                            <constraint firstItem="Zkh-o9-17C" firstAttribute="centerX" secondItem="DPz-lD-IcV" secondAttribute="centerX" id="PG4-IH-TB6"/>
+                            <constraint firstItem="bSY-F7-7Ej" firstAttribute="height" secondItem="AgF-qL-F7T" secondAttribute="height" multiplier="1/5" id="b2O-Xh-pfx"/>
+                            <constraint firstItem="bSY-F7-7Ej" firstAttribute="top" secondItem="Zkh-o9-17C" secondAttribute="bottom" constant="8" id="fVI-0x-1Qw"/>
+                            <constraint firstItem="bSY-F7-7Ej" firstAttribute="centerX" secondItem="DPz-lD-IcV" secondAttribute="centerX" id="kgI-Ei-IyC"/>
+                            <constraint firstItem="bSY-F7-7Ej" firstAttribute="leading" secondItem="AgF-qL-F7T" secondAttribute="leading" id="oia-nh-hHw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AgF-qL-F7T"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbb-V1-E2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chicken" width="16" height="16"/>
+    </resources>
+</document>
